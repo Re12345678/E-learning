@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <!-- Render All Elements Normally -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <!-- Bootstrap Library -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Main Template CSS File -->
+        <link rel="stylesheet" href="css/register.css" />
+        <link rel="stylesheet" href="css/fa.min.css">
+    
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
+            rel="stylesheet" />
+        <!-- JS & JQUERY -->
+        <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
+        <script src="js/script.js"></script>
+    </head>
+</head>
+<body>
+    <div class="contact" id="contact">
+        <div class="container">
+        <div class="tittle">
+            <h1>Create Account</h1>
+        </div>
+      
+          <div class="content">
+            <form id="signInForm">
+              <div class="row" >
+                <div class="col">
+                  <input id="firstNameInput" type="text" class="main-input" placeholder="First name" required>
+                </div>
+                <div class="col">
+                  <input type="text" class="main-input" placeholder="Last name" required>
+                </div>
+              </div>            
+              <input class="main-input" type="email" name="mail" placeholder="Your Email" required>
+             
+                  <input class="main-input" type="text" name="name" placeholder="Username " required>
+                
+              <div class="row">
+                <div class="col">
+                  <input type="password" class="main-input" placeholder="Password" required>
+                </div>
+                <div class="col">
+                  <input type="password" class="main-input" placeholder="Confirm Password" required>
+                </div>
+              </div>
+              <a  href="./login.html"><input class="signup" type="submit" value="Sign up"></a>
+              <div class="or">
+                <div class="txt">
+                  <h4> <span></span> sign up with</h4>
+                </div>
+                <div class="social">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-google"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-instagram"></i>  
+                </div>
+               <div class="already">
+                <h4>already have an Account ? <a href="./login.html">sign in</a> </h4>
+               </div>
+              </div>
+            </form>
+         
+          </div>
+        </div>
+      </div>
+      <script>
+        document.getElementById('signInForm').addEventListener('submit', function (event) {
+          event.preventDefault();
+            // Redirect to another page (replace 'targetPage.html' with your desired page)
+            window.location.href = './login.html';
+        });
+    </script>
+            <script src="js/script.js"></script>
+</body>
+</html>

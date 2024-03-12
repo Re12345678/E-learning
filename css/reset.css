@@ -1,0 +1,120 @@
+ /*start reset*/
+ body{
+    background-color: lavender;
+  }
+ .contact .content {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding-bottom: 60px;
+    margin-top: 20px;
+    padding: 50px;
+  }
+  
+  @media(max-width:1200px) {
+    .contact .content {
+      flex-direction: column;
+    }
+  }
+  @media(max-width:768px) {
+    .contact .content {
+  margin-top: 30px;    
+    }
+  }
+ .contact .tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+ }
+  .contact .tittle h1{
+    text-align: center;
+    background: #000046;  
+  background: -webkit-linear-gradient(to right, #1CB5E0, #4949df);
+  background: linear-gradient(to right, #5151f0, #6868fd); 
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-weight: bold;
+    font-size: 60px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  @media(max-width:768px){
+    .contact .tittle h1{
+      font-size: 30px;
+    
+    }
+    
+  }
+  .contact .content form {
+    flex-basis: 70%;
+    font-size: 20px;
+  }
+  
+  .contact .content form .main-input {
+    padding: 15px;
+    display: block;
+    border: none;
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: #212121;
+    color: white;
+    border-radius: 25px;
+  }
+  .contact .content form .main-input::placeholder {
+   color: #888888;
+  }
+  .contact .content form .main-input:focus {
+   outline: none;
+   box-shadow: #084da6 1px 1px 2px 3px;
+   background-color: #212121;
+  }
+  
+  .contact .content form textarea.main-input {
+    height: 200px;
+  }
+  .contact .content form .verfiy  {
+    background: -webkit-linear-gradient(90deg, #0a3c8e,#04398e,#203b86,#09489b);
+    background: linear-gradient(90deg, #001a43,#022e74,#213671,#084da6);
+    padding: 15px;
+    width:350px;
+    border: none;
+    margin: auto;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  .contact .content form .verfiy:hover{
+    transform: translateX(-10px);
+  }
+  
+.click{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.content .image{
+    width: auto;
+    height: auto;
+}
+@media(max-width:992px){
+    .content .image{
+    display: none;
+  }
+  }
+
+    /*end reset*/
+
+  

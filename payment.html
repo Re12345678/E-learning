@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Payment</title>
+        <!-- Render All Elements Normally -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <!-- Bootstrap Library -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Main Template CSS File -->
+        <link rel="stylesheet" href="css/register.css" />
+        <link rel="stylesheet" href="css/payment.css" />
+        <link rel="stylesheet" href="css/fa.min.css">
+    
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
+            rel="stylesheet" />
+        <!-- JS & JQUERY -->
+      <script src="js/jquery-3.7.1.min.js"></script> 
+        <script src="js/script.js"></script>
+    </head>
+</head>
+<body>
+    <div class="contact payment" id="contact">
+        <div class="container">
+            <div class="pay">
+            <img src="./img/visa.jpg">
+            <form>
+              <div class="card">
+                <p><i class="fas fa-credit-card"></i> Card</p>
+              <div class="dis">
+                <div class="row"><input type="text" placeholder="Name"><label> Name</label>
+                </div>
+                 
+              </div>
+              <div class="row"><input type="text" class="num" placeholder="1234 1234 1234 1234"><label class="number"
+                >Card Number</label>
+                 <div class="cards">
+                  <img src="./img/card1.jpg">
+                  <img src="./img/card2.jpg">
+                  <img src="./img/card3.jpg">
+                  </div>
+              </div>
+              <div class="row"><input type="text" placeholder="MM/YY"><label>Exprition</label>
+                </div>
+                <div class="row"><input type="text" placeholder="CVC" ><label>CVC</label>
+                  <!-- <span style="margin-top: 81px;"></span> -->
+                </div>
+<p>By providing your card information, you allow Coursera, Inc. to charge your card for future payments in accordance with their terms.</p>
+             </div>
+             <div class="free"> 
+              <a href="">Check Out</a> 
+              <!-- Add this HTML after the closing tag of the "free" div -->
+<!-- Add this HTML after the closing tag of the "free" div -->
+<div class="success-card" style="display: none;">
+  <i class="fa-regular fa-circle-check"></i>
+  <h2>Payment Successful!</h2>
+  <p >Your payment has been processed successfully. <br> <span>Thank you!</span></p>
+  <button class="close-button" onclick="coursesPage()" >Close</button>
+
+</div>
+
+          
+            <a href="./courses.html">Start Free Trial</a>
+             </div>
+             <p class="today">You won't be charged today</p>
+
+            </form>
+          </div>
+        </div>
+      </div>
+     
+
+</body>
+</html>

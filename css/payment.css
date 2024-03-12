@@ -1,0 +1,302 @@
+body{
+  background-color: lavender;
+}
+.contact .content {
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  padding-bottom: 60px;
+  margin-top: 20px;
+  padding: 50px;
+}
+
+@media(max-width:1200px) {
+  .contact .content {
+    flex-direction: column;
+  }
+}
+@media(max-width:768px) {
+  .contact .content {
+margin-top: 30px;    
+  }
+}
+.payment .container {
+  padding: 20px 0;
+}
+.contact .content form {
+  flex-basis: 70%;
+  font-size: 20px;
+}
+
+.contact .content form .main-input::placeholder {
+  color: #888888;
+ }
+ .contact .content form .main-input:focus:not(.contact .content form .main-input){
+  outline: none;
+  box-shadow: #084da6 1px 1px 2px 3px;
+  background-color: #212121;
+ }
+ 
+ .contact .content form textarea.main-input {
+   height: 200px;
+ }
+
+.pay{
+width: 500px;
+background-color: #450a4f;
+border-radius: 17px;
+padding-bottom: 0;
+padding-top: 4px;
+margin-left: 300px;
+}
+.pay > img{
+padding: 25px;
+border-radius: 20px;
+/* margin-left: -12px; */
+width: 100%;
+}
+.pay form{
+width: 100%;
+padding: 30px;
+background-color: white;
+border-radius: 17px;
+}
+.card{
+border: none;
+}
+.pay .cards{
+position: relative;
+/* right: 130px; */
+left: 343px;
+float: right;
+text-align: left;
+top: -25px;
+width: fit-content;
+}
+.pay .cards img{
+width: 39px;
+height: 30px;
+border-radius: 4px;
+}
+.card input{
+width: 100%;
+}
+.row{
+display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  position: relative;
+  border-bottom: 2px solid gray;
+}
+.info .row{
+position: relative;
+border-bottom: 2px solid #767268;
+margin-right: 100px;
+width: 17%;
+margin-top: -1%;
+position: relative;
+}
+.row input{
+width: 100%;
+padding: 0 5px;
+margin-left: 4px;
+margin-top: 28px;
+height: 50px;
+font-size: 18px;
+border: none;
+background: none;
+outline: none;
+}
+.row label{
+position: absolute;
+top: -7px;
+transform: translateY(36%);
+font-size: 22px;
+transition: 0.5s;
+}
+.card > p{
+font-size: 25px;
+}
+
+.pay h3{
+margin-top: 33px;
+}
+.contact h1{
+padding-bottom: 52px;
+color: #d894a0;
+}
+.card p i{
+padding-right: 8px;
+color:#450a4f;
+}
+.card .main-input{
+border-radius: 0;
+padding: 12px;
+background-color: white;
+}
+.contact .content form .main-input{
+background-color: white;
+border: 1px solid #767272d9;
+padding: 12px;
+border-radius: 0;
+color:#767272d9;
+width: 100%;
+}
+.pay .card .num{
+position: relative;
+top: 35px;
+}
+.pay .card .number{
+top: -2px;
+}
+.pay .card p:last-of-type{
+font-size: 14px;
+color: gray;
+margin-top: 31px;
+}
+.pay .free {
+display: flex;
+justify-content: space-between;
+position: relative;
+margin-top: 20px;
+background-color: white;
+width: 100%;
+padding-top: 21px;
+}
+
+.pay .free a{
+  background-color: #450a4f;
+  color: white;
+  /* padding: 16px; */
+  border-radius: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  width: 158px;
+  text-align: center;
+  padding-top: 15px;
+  height: 55px;
+}
+.pay p{
+  font-size: 20px;
+  font-family: cursive;
+  margin-top: 25px;  
+  flex-direction: column;
+}
+.pay .today{
+  text-align: center;
+
+}
+.pay .cards{
+  left: 337px;
+  top: -10px;
+
+}
+@media (max-width:1200px) {
+  
+  .content .dis{
+    left: auto;
+    top: auto;
+  }
+  .pay .free a{
+    position: relative;
+    left: -55px;
+  }
+  .pay .cards{
+    left: 337px;
+
+  }
+  .pay .free{
+    left: 19px; 
+    justify-content: space-evenly;
+  }
+}
+@media (max-width:992px) {
+
+  .pay .free a{
+    left: auto;
+  }
+  .pay .free{
+    left: auto; 
+    justify-content: space-between;
+  }
+}
+
+@media (max-width:767px) {
+ 
+.content .dis{
+width: 341px;
+}
+.pay{
+  width: 100%;
+  margin: auto;
+}
+.pay .free{
+background:none;
+flex-direction: column;
+}
+.pay  p{
+display: none;
+}
+.pay .free a{
+text-align: center;
+width: 100%;
+margin-bottom: 15px;
+}
+.pay .cards{
+display: none;
+}
+.pay .card .num{
+  position: relative;
+  top: 4px;
+}
+.pay .card .number{
+  top: -2px;
+}
+}
+
+/* Add this CSS in your style section or external stylesheet */
+.blur {
+  filter: blur(5px); 
+}
+
+.success-card {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  padding: 20px;
+  background-color: #4CAF50; /* Green background color */
+  color: #fff; /* White text color */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  z-index: 1000;
+}
+.success-card i {
+  font-size: 70px;
+  padding-bottom: 30px;
+}
+.success-card h2 {
+  margin-bottom: 10px;
+}
+.success-card span{
+  font-weight: bold;
+  font-size: 22px;
+}
+.success-card .close-button {
+  cursor: pointer;
+  background-color: #fff; /* White background color */
+  color: #4CAF50; /* Green text color */
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+

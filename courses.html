@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>courses</title>  
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Bootstrap Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fa.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
+        rel="stylesheet" />
+    <!-- JS & JQUERY -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+</head>
+<body >
+    
+  
+    <div class="courses" id="courses" style="padding-bottom: 50px;">
+      
+        <div class="container">
+            <input  onkeyup="searchProduct();" placeholder="Search ..."
+            type="text" class="form-control" id="search-item"/>
+            <div class="list">
+
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/course-1.png">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i> 20 Lesson</span>
+                    <span> <i class="far fa-clock"></i>100 Hour</span>
+                </div>
+                <h3>English</h3>
+                <p>Our Comprehensive English Course is structured to foster proficiency in listening, speaking, reading,
+                    and writing Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>500</span>
+                <div class="data">
+                    <span><img src="./img/inst1.png">Dr.Emily</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/course 2.jpg">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i>15 Lessons</span>
+                    <span> <i class="far fa-clock"></i>60 Hour</span>
+                </div>
+                <h3>German</h3>
+                <p>Dive into the world of German with our comprehensive language course. From basic phrases to advanced
+                    grammar, our curriculum covers it all. </p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>1000</span>
+                <div class="data">
+                    <span><img src="./img/client1.jpg">Dr.Marcus</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/c++.png">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i> 20 Lesson</span>
+                    <span> <i class="far fa-clock"></i>100 Hour</span>
+                </div>
+                <h3>C++</h3>
+                <p>Embark on a coding journey with our C++ Course! Whether you're a beginner eager to learn programming
+                    or an experienced developer looking to expand your skill.</p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>900</span>
+                <div class="data">
+                    <span><img src="./img/inst3.jpg">Dr.Samuel</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/java.png">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i>12 Lessons</span>
+                    <span> <i class="far fa-clock"></i>50 Hours</span>
+                </div>
+                <h3>Java</h3>
+                <p>Unlock the potential of Java with our hands-on coding course. From the basics of syntax to advanced
+                    concepts like multithreading and Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>700</span>
+                <div class="data">
+                    <span><img src="./img/client1.jpg">Dr.Marcus</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/hq720.jpg">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i>30 Lessons</span>
+                    <span> <i class="far fa-clock"></i>300 Hours</span>
+                </div>
+                <h3>C#</h3>
+                <p>Master the world of C# programming with guidance from our expert instructors. Drawing on their
+                    industry experience, our instructors will lead you through the nuances of features </p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>800</span>
+                <div class="data">
+                    <span><img src="./img/inst5.jpg">Prof Ryan</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/py.jpg">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i>20 Lesson</span>
+                    <span> <i class="far fa-clock"></i>120 Hour</span>
+                </div>
+                <h3>Python</h3>
+                <p>Open doors to innovation and problem-solving by learning Python. Our course offers a supportive and
+                    structured environment suitable  sit amet consectetur adipisicing elit.</p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>500</span>
+                <div class="data">
+                    <span><img src="./img/inst6.png">Dr.Sophia</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/Mass Communication Courses.jpeg">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i> 20 Lesson</span>
+                    <span> <i class="far fa-clock"></i>100 Hour</span>
+                </div>
+                <h3>Mass Communication </h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore,  Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>500</span>
+                <div class="data">
+                    <span><img src="./img/inst1.png">Dr.Emily</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/Get the best digital marketing services.jpeg">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i>15 Lessons</span>
+                    <span> <i class="far fa-clock"></i>60 Hour</span>
+                </div>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor porro rem delectus a optio nostrum!
+                    Lorem ipsum dolor sit amet consectetur  </p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>1000</span>
+                <div class="data">
+                    <span><img src="./img/client1.jpg">Dr.Marcus</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/Will Machine Learning AI Make Human Translators An Endangered Species_.jpeg">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i> 20 Lesson</span>
+                    <span> <i class="far fa-clock"></i>100 Hour</span>
+                </div>
+                <h3>Machine Learning</h3>
+                <p>Will Machine Learning AI Make Human Translators An Endangered Species
+                    Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>900</span>
+                <div class="data">
+                    <span><img src="./img/inst3.jpg">Dr.Samuel</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/Build a Pure CSS Image Slider with HTML and CSS3 for Free.jpeg">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i>12 Lessons</span>
+                    <span> <i class="far fa-clock"></i>50 Hours</span>
+                </div>
+                <h3>HTML , CSS</h3>
+                <p>Build a Pure CSS Image Slider with HTML and CSS3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, molestiae.</p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>700</span>
+                <div class="data">
+                    <span><img src="./img/inst4.png">Dr.Marcus</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/Getting Started With React_js.jpeg">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i>30 Lessons</span>
+                    <span> <i class="far fa-clock"></i>300 Hours</span>
+                </div>
+                <h3>React</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, repellendus! Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>800</span>
+                <div class="data">
+                    <span><img src="./img/inst5.jpg">Prof Ryan</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/py.jpg">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i>20 Lesson</span>
+                    <span> <i class="far fa-clock"></i>120 Hour</span>
+                </div>
+                <h3>Python</h3>
+                <p>Open doors to innovation and problem-solving by learning Python. Our course offers a supportive and
+                    structured environment suitable for all one.</p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>500</span>
+                <div class="data">
+                    <span><img src="./img/inst6.png">Dr.Sophia</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/English learning_.jpeg">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i> 20 Lesson</span>
+                    <span> <i class="far fa-clock"></i>100 Hour</span>
+                </div>
+                <h3>English learning</h3>
+                <p>Our Comprehensive English Course is structured to foster proficiency in listening, speaking, reading,
+                    and writing.</p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>500</span>
+                <div class="data">
+                    <span><img src="./img/inst1.png">Dr.Emily</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/Best UI_UX Courses in Mumbai.jpeg">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i>15 Lessons</span>
+                    <span> <i class="far fa-clock"></i>60 Hour</span>
+                </div>
+                <h3>UI & UX</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eius asperiores excepturi officia labore atque? </p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>1000</span>
+                <div class="data">
+                    <span><img src="./img/inst2.jpeg">Dr.Marcus</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/Flutter Drawer Dynamic Ready Side Menu.jpeg">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i> 20 Lesson</span>
+                    <span> <i class="far fa-clock"></i>100 Hour</span>
+                </div>
+                <h3>Flutter</h3>
+                <p>Embark on a coding journey with our Flutter Course! Whether you're a beginner eager to learn programming
+                     to expand your skill.</p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>900</span>
+                <div class="data">
+                    <span><img src="./img/inst3.jpg">Dr.Samuel</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/39 of the best JavaScript libraries and frameworks to try in 2021 - Layout _ Creative content for designers, developers, & marketers.jpeg">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i>12 Lessons</span>
+                    <span> <i class="far fa-clock"></i>50 Hours</span>
+                </div>
+                <h3>JavasScript</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure earum ipsam nam eos voluptates minus facere non praesentium quo necessitatibus?.</p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>700</span>
+                <div class="data">
+                    <span><img src="./img/inst4.png">Dr.Marcus</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/Node_js and npm_ introductory tutorial.jpeg">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i>30 Lessons</span>
+                    <span> <i class="far fa-clock"></i>300 Hours</span>
+                </div>
+                <h3>Node js</h3>
+                <p>Master the world of Node_js programming with guidance from our expert instructors. Drawing on their
+                    lead you through the nuances of features.</p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>800</span>
+                <div class="data">
+                    <span><img src="./img/inst5.jpg">Prof Ryan</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course" onclick="redirectToPaymentPage()">
+                <img src="./img/What is Graphic Design_ (& Types, History & Examples).jpeg">
+                <div class="info">
+                    <span><i class="fas fa-tasks"></i>30 Lessons</span>
+                    <span> <i class="far fa-clock"></i>300 Hours</span>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A suscipit ullam repellendus esse nemo quo.
+                    A suscipit ullam repellendus esse nemo quo.
+                </p>
+                <span class="salary"><i class="fas fa-dollar-sign"></i>800</span>
+                <div class="data">
+                    <span><img src="./img/inst5.jpg">Prof Ryan</span>
+                    <div class="rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i style="color: #777;" class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        </div>
+       
+    </div>
+    <script>
+       const searchProduct = () => {
+    var searchbox = document.getElementById("search-item").value.trim().toUpperCase();
+    var courseItem = document.getElementsByClassName("course");
+
+    for (let i = 0; i < courseItem.length; i++) {
+        var courseName = courseItem[i].getElementsByTagName("h3")[0];
+
+        if (courseName) {
+            var nameText = courseName.textContent || courseName.innerHTML;
+
+            if (nameText.toUpperCase().indexOf(searchbox) > -1) {
+                courseItem[i].style.display = "";
+            } else {
+                courseItem[i].style.display = "none";
+            }
+        }
+    }
+};
+
+    </script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

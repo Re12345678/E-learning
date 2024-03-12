@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <!-- Render All Elements Normally -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <!-- Bootstrap Library -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Main Template CSS File -->
+        <link rel="stylesheet" href="css/Login.css" />
+        <link rel="stylesheet" href="css/fa.min.css">
+    
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
+            rel="stylesheet" />
+        <!-- JS & JQUERY -->
+         <script src="js/jquery-3.7.1.min.js"></script> 
+    </head>
+</head>
+<body>
+    <div class="contact" id="contact">
+        <div class="container">
+        <div class="tittle">
+            <h1>Login</h1>
+        </div>
+          <div class="content">
+            <div class="image">
+                <img src="img/log (1).png" alt="">
+            </div>
+            <form id="signInForm" >
+              <input class="main-input" type="text" name="name" placeholder="Username"required> <i class="fa-solid fa-user ic "></i>
+              <input class="main-input" type="password" name="name" placeholder="Password" required> <i class="fa-solid fa-lock-open ic"></i>
+              <div class="form-group mb-3">
+                <div class="click">
+                    <div class="remember">
+                        <input type="checkbox" name="remember" value="1" class="blue-checkbox">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    
+                    <div class="forget">
+                        <a href="./reset.html">Forget Password ?</a>
+                    </div>
+                </div>
+            </div>
+            <div id="error-message" class="error-message"></div>
+            <input  class="signin" type="submit" value="Sign in">
+            <div class="or">
+                <div class="txt">
+                  <h4>or sign in with</h4>
+                </div>
+                <div class="social">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-google"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-instagram"></i>  
+                </div>
+                <div class="donot">
+                  <h4>don't have an account ? <a href="./index.html">create an account</a> </h4>
+                 </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.getElementById('signInForm').addEventListener('submit', function (event) {
+          event.preventDefault();
+            // Redirect to another page (replace 'targetPage.html' with your desired page)
+            window.location.href = 'home.html';
+        });
+    </script>
+            <script src="js/script.js"></script>
+</body>
+</html>
